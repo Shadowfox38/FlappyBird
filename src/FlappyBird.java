@@ -68,7 +68,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener
     @Override
     public void keyPressed(KeyEvent keyEvent)
     {
-        if(keyEvent.getKeyCode() == KeyEvent.VK_SPACE)
+        if(keyEvent.getKeyCode() == KeyEvent.VK_SPACE || keyEvent.getKeyCode() == KeyEvent.VK_UP)
             jump();
     }
 

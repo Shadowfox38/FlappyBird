@@ -1,6 +1,7 @@
 #Folders
 out/
 .idea/
+META-INF/
 
 #Files
 FlappyBird.iml
