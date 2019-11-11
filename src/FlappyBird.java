@@ -6,7 +6,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class FlappyBird implements ActionListener, MouseListener, KeyListener
+public class FlappyBird extends Canvas implements ActionListener, MouseListener, KeyListener
 {
     public static FlappyBird flappyBird;
     private final int WIDTH = 800, HEIGHT = 800;
@@ -146,6 +146,7 @@ public class FlappyBird implements ActionListener, MouseListener, KeyListener
             }
         }
         renderer.repaint();
+        getToolkit().sync();
     }
     public void repaint(Graphics g)
     {
